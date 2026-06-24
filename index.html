@@ -29,7 +29,7 @@
     .workbench{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px}.viewer{position:relative;min-height:680px;border:1px solid var(--line);border-radius:30px;overflow:hidden;background:linear-gradient(145deg,#dfe7f0,#f8fbff);box-shadow:var(--shadow)}.viewer-head{position:absolute;z-index:5;left:14px;right:14px;top:14px;display:flex;justify-content:space-between;gap:10px;pointer-events:none}.viewer-chip{pointer-events:auto;display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;background:rgba(7,17,31,.86);backdrop-filter:blur(10px);color:#e9f4ff;border:1px solid rgba(255,255,255,.15);font-size:13px;font-weight:900}.tools{display:flex;gap:8px;pointer-events:auto}.tools button,.diagram-select button,.mini-btn{border:1px solid rgba(255,255,255,.16);background:rgba(7,17,31,.82);color:#e9f4ff;border-radius:13px;padding:9px 11px;font-weight:900}.tools button:hover,.diagram-select button:hover,.mini-btn:hover{border-color:var(--green);color:var(--green2)}
     .diagram-stage{position:absolute;inset:70px 22px 22px;transform-origin:center;transition:.18s}.schematic{width:100%;height:100%;filter:drop-shadow(0 18px 24px rgba(0,0,0,.14))}.hotspot{cursor:pointer;fill:rgba(32,242,139,.22);stroke:rgba(2,104,67,.95);stroke-width:1.6;transition:.15s}.hotspot:hover,.hotspot.active{fill:rgba(32,242,139,.62);stroke:#006b42;filter:drop-shadow(0 0 12px rgba(32,242,139,.7))}.part-number{font-size:11px;font-weight:900;fill:#04110b;pointer-events:none}.ghost{fill:none;stroke:#1f2937;stroke-width:1.6}.ghost2{fill:none;stroke:#64748b;stroke-width:1}.metal{fill:#f8fafc;stroke:#1f2937;stroke-width:1.5}.chain{fill:none;stroke:#475569;stroke-width:5;stroke-linecap:round;stroke-dasharray:1 7}.chain2{fill:none;stroke:#e2e8f0;stroke-width:2;stroke-linecap:round;stroke-dasharray:1 7}.side{display:grid;gap:16px}.info-card{border:1px solid var(--line);background:linear-gradient(180deg,rgba(17,31,54,.96),rgba(8,19,35,.96));border-radius:30px;padding:18px;min-height:250px;box-shadow:var(--shadow)}.info-card .num{width:62px;height:62px;border-radius:20px;background:linear-gradient(135deg,var(--green),#46a7ff);color:#04110b;font-size:30px;font-weight:1000;display:grid;place-items:center;margin-bottom:12px}.info-card h3{font-size:24px;margin:0 0 8px}.part-code{display:inline-flex;margin:8px 0;padding:9px 12px;border-radius:14px;background:#07101e;border:1px dashed rgba(32,242,139,.45);color:var(--green2);font-weight:1000}.diagram-select{display:flex;flex-wrap:wrap;gap:8px}.diagram-select button.active{background:var(--green);color:#04110b;border-color:var(--green)}
     table{width:100%;border-collapse:collapse;min-width:760px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:22px}th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#0d1a30;color:var(--green2);position:sticky;top:0}tr:hover{background:rgba(32,242,139,.08)}.row-select{outline:2px solid rgba(32,242,139,.5);background:rgba(32,242,139,.12)}
-    .steps{counter-reset:step;display:grid;gap:12px}.step{position:relative;padding:15px 15px 15px 58px;border:1px solid var(--line);background:#081323;border-radius:20px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:14px;top:14px;width:30px;height:30px;border-radius:11px;background:var(--green);color:#04110b;display:grid;place-items:center;font-weight:1000}.mobile-note{display:none}.pulse{animation:pulse 1.2s infinite}@keyframes pulse{50%{opacity:.45}}
+    .steps{counter-reset:step;display:grid;gap:12px}.service-form{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end;margin-top:12px}.service-form label{grid-column:1/-1;color:var(--muted);font-size:12px;font-weight:900;text-transform:uppercase}.service-form input{border:1px solid var(--line);outline:0;background:#07101e;color:var(--text);border-radius:15px;padding:13px 14px}.due{border-color:rgba(255,107,107,.55);background:rgba(255,107,107,.08)}.soon{border-color:rgba(255,209,102,.55);background:rgba(255,209,102,.08)}.ok{border-color:rgba(32,242,139,.35)}.checkline{display:flex;gap:10px;align-items:flex-start;margin-top:9px}.checkline input{accent-color:var(--green);margin-top:4px}.symptom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:14px}.symptom-btn{border:1px solid var(--line);background:#081323;color:var(--text);border-radius:18px;padding:13px;text-align:left;font-weight:900}.symptom-btn.active,.symptom-btn:hover{border-color:var(--green);color:var(--green2)}.compact{min-height:auto}.step{position:relative;padding:15px 15px 15px 58px;border:1px solid var(--line);background:#081323;border-radius:20px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:14px;top:14px;width:30px;height:30px;border-radius:11px;background:var(--green);color:#04110b;display:grid;place-items:center;font-weight:1000}.mobile-note{display:none}.pulse{animation:pulse 1.2s infinite}@keyframes pulse{50%{opacity:.45}}
     @media(max-width:1100px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto}.top{flex-direction:column}.search{width:100%}.workbench{grid-template-columns:1fr}.viewer{min-height:560px}.span4,.span5,.span7,.span8{grid-column:span 12}.kpis{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:640px){.main{padding:14px}.sidebar{padding:16px}.viewer{min-height:500px;border-radius:22px}.diagram-stage{inset:84px 6px 12px}.viewer-head{flex-direction:column}.kpis{grid-template-columns:1fr}.mobile-note{display:block}.hero h2{font-size:42px}}
   </style>
@@ -38,26 +38,27 @@
 <div class="app">
   <aside class="sidebar">
     <div class="brand"><div class="logo">EC7</div><div><h1>Workshop Pro</h1><small>interactive repair data</small></div></div>
-    <div class="car-card"><b>Geely Emgrand EC7</b><span class="muted">двигатель JL4G18 1.8 MT</span><div class="pill"><span class="dot"></span> MVP: ГРМ / артикулы / моменты</div></div>
+    <div class="car-card"><b>Geely Emgrand EC7</b><span class="muted">двигатель JL4G18 1.8 MT</span><div class="pill"><span class="dot"></span> MVP+: ГРМ / ТО / диагностика</div></div>
     <nav class="nav" aria-label="Разделы">
       <button class="active" data-view="dashboard">🏠 Главная</button>
       <button data-view="schemes">🟢 Интерактивная схема</button>
       <button data-view="procedures">🔧 Процедуры ремонта</button>
       <button data-view="parts">📦 Артикулы</button>
       <button data-view="torques">⚙️ Моменты затяжки</button>
+      <button data-view="maintenance">🧰 ТО и диагностика</button>
     </nav>
   </aside>
   <main class="main">
     <div class="top">
-      <section class="hero"><h2>Живой мануал<br>по EC7</h2><p>Теперь это не скучная страница, а кликабельный рабочий стол: выбираешь деталь на схеме, видишь артикул, роль узла, момент затяжки и связанные операции.</p></section>
+      <section class="hero"><h2>Живой мануал<br>по EC7</h2><p>Теперь это не скучная страница, а кликабельный рабочий стол: выбираешь деталь на схеме, видишь артикул, роль узла, момент затяжки, связанные операции, план ТО и подсказки по симптомам.</p></section>
       <section class="search"><label for="search">Быстрый поиск</label><input id="search" placeholder="цепь, натяжитель, 1136000081, 29 Н·м..." /></section>
     </div>
 
     <section id="dashboard" class="view active">
       <div class="grid">
-        <article class="panel span12"><div class="kpis"><div class="kpi"><strong>12</strong><span>позиций ГРМ</span></div><div class="kpi"><strong>3</strong><span>процедуры</span></div><div class="kpi"><strong>6</strong><span>моментов затяжки</span></div><div class="kpi"><strong>2</strong><span>кликабельные схемы</span></div></div></article>
-        <article class="panel span7"><h3>Что изменено</h3><p class="muted">Я убрал ощущение “таблички” и сделал интерфейс как рабочую программу: тёмная панель, крупный viewer, зелёные кликабельные детали, карточка выбранной детали, масштабирование и переключение схем.</p><div class="warning">Следующий технический шаг — заменить упрощённый чертёж на реальные отрендеренные страницы PDF и точно разметить координаты деталей.</div></article>
-        <article class="panel span5"><h3>Быстрый старт</h3><div class="steps"><div class="step">Открой раздел “Интерактивная схема”.</div><div class="step">Нажми на зелёную деталь.</div><div class="step">Смотри артикул, описание и момент затяжки справа.</div></div></article>
+        <article class="panel span12"><div class="kpis"><div class="kpi"><strong>12</strong><span>позиций ГРМ</span></div><div class="kpi"><strong>3</strong><span>процедуры</span></div><div class="kpi"><strong>6</strong><span>моментов затяжки</span></div><div class="kpi"><strong>9</strong><span>операций ТО</span></div></div></article>
+        <article class="panel span7"><h3>Что изменено</h3><p class="muted">Я убрал ощущение “таблички” и сделал интерфейс как рабочую программу: тёмная панель, крупный viewer, зелёные кликабельные детали, карточка выбранной детали, масштабирование и переключение схем.</p><div class="warning">Если пришлёшь PDF/сканы, можно добавить реальные страницы: распознаем таблицы, привяжем координаты деталей и расширим базу процедур.</div></article>
+        <article class="panel span5"><h3>Быстрый старт</h3><div class="steps"><div class="step">Открой раздел “Интерактивная схема”.</div><div class="step">Нажми на зелёную деталь.</div><div class="step">Смотри артикул, описание и момент затяжки справа.</div><div class="step">Открой “ТО и диагностика”, введи пробег и получи список ближайших работ.</div></div></article>
       </div>
     </section>
 
@@ -79,6 +80,30 @@
     <section id="procedures" class="view"><div class="section-title"><h3>Процедуры ремонта</h3></div><div class="cards" id="procedureCards"></div></section>
     <section id="parts" class="view"><div class="section-title"><h3>Артикулы запчастей</h3></div><div class="table-wrap"><table><thead><tr><th>№</th><th>Артикул</th><th>Название</th><th>Кол-во</th><th>Система</th></tr></thead><tbody id="partsBody"></tbody></table></div></section>
     <section id="torques" class="view"><div class="section-title"><h3>Моменты затяжки</h3></div><div class="cards" id="torqueCards"></div></section>
+
+    <section id="maintenance" class="view">
+      <div class="grid">
+        <article class="panel span5">
+          <h3>План ТО по пробегу</h3>
+          <p class="muted">Введи текущий пробег — приложение подсветит просроченные и ближайшие операции. Интервалы базовые, их нужно сверить с твоим руководством и условиями эксплуатации.</p>
+          <div class="service-form">
+            <label for="mileage">Пробег, км</label>
+            <input id="mileage" type="number" min="0" step="1000" value="120000" />
+            <button class="mini-btn" id="calcMaintenance">Рассчитать</button>
+          </div>
+          <div id="maintenanceSummary" class="warning"></div>
+        </article>
+        <article class="panel span7">
+          <div class="section-title"><h3>Ближайшие работы</h3><span class="tag">интерактивный чек-лист</span></div>
+          <div class="cards" id="maintenanceCards"></div>
+        </article>
+        <article class="panel span12">
+          <div class="section-title"><h3>Диагностика по симптомам</h3><span class="tag">быстрые гипотезы</span></div>
+          <div class="symptom-grid" id="symptomGrid"></div>
+          <div class="info-card compact" id="symptomResult"><h3>Выбери симптом</h3><p class="muted">Появятся вероятные причины, проверки и связанные разделы.</p></div>
+        </article>
+      </div>
+    </section>
   </main>
 </div>
 <script>
@@ -99,6 +124,23 @@ const parts=[
 const torques=[
  ['Гайки крепления натяжителя цепи ГРМ','29 Н·м','Натяжитель цепи'],['Крепеж крышки ГРМ M6','12 Н·м','Крышка ГРМ'],['Крепеж крышки ГРМ M8','18 Н·м','Крышка ГРМ'],['Болт шкива коленчатого вала','138 Н·м','Крышка ГРМ'],['Болты успокоителя цепи','10 Н·м','Проверка цепи'],['Болт направляющей планки натяжителя','19 Н·м','Проверка цепи']
 ];
+const maintenance=[
+ {name:'Моторное масло и фильтр',interval:10000,critical:true,checks:['Проверить уровень и течи после запуска.','Использовать вязкость по климату и допуску из руководства.']},
+ {name:'Воздушный фильтр двигателя',interval:15000,checks:['Осмотреть корпус фильтра и патрубки.','В пыльных условиях сокращать интервал.']},
+ {name:'Свечи зажигания',interval:30000,checks:['Проверить зазор и цвет изолятора.','При пропусках зажигания начать диагностику с катушек/свечей.']},
+ {name:'Масло МКПП',interval:60000,checks:['Проверить уровень на ровной площадке.','Осмотреть сальники приводов.']},
+ {name:'Охлаждающая жидкость',interval:40000,checks:['Проверить плотность/температуру замерзания.','Осмотреть радиатор, помпу и патрубки.']},
+ {name:'Ремень навесного оборудования',interval:30000,checks:['Искать трещины, свист, перекос роликов.','Проверить натяжение.']},
+ {name:'Тормозная жидкость',interval:30000,checks:['Менять по времени/влажности, не только по пробегу.','После работ прокачать контуры.']},
+ {name:'Цепь ГРМ и направляющие',interval:90000,critical:true,checks:['Слушать холодный запуск.','Проверить натяжитель, успокоители и метки при шуме.']},
+ {name:'Подвеска и рулевое',interval:15000,checks:['Проверить люфты, пыльники, стойки стабилизатора.','После замены деталей сделать сход-развал.']}
+];
+const symptoms=[
+ {name:'Шум цепи на холодную',causes:['растянута цепь ГРМ','уставший натяжитель','износ направляющих'],checks:['Не газовать до диагностики.','Проверить натяжитель, метки и выработку башмаков.'],view:'schemes'},
+ {name:'Плавающие обороты',causes:['подсос воздуха','грязная дроссельная заслонка','свечи/катушки','датчики впуска'],checks:['Проверить патрубки и хомуты.','Считать ошибки OBD-II.','Очистить дроссель с адаптацией при необходимости.'],view:'procedures'},
+ {name:'Течь масла спереди двигателя',causes:['крышка ГРМ','сальник коленвала','герметик стыков'],checks:['Отмыть зону и определить источник.','Проверить вентиляцию картера.'],view:'schemes'},
+ {name:'Трудно включаются передачи',causes:['масло МКПП','сцепление','тросы/механизм выбора'],checks:['Проверить уровень масла МКПП.','Оценить ход педали и наличие воздуха в гидроприводе.'],view:'maintenance'}
+];
 const procedures=[
  {title:'Натяжитель цепи ГРМ — снятие и установка',tag:'ГРМ',summary:'Выставить ВМТ, нанести метки, зафиксировать цепь и распредвал, снять и установить натяжитель.',warn:'Не проворачивать коленвал при снятом или ослабленном натяжителе.',steps:['Отключить АКБ.','Снять декоративную крышку, катушки и крышку ГБЦ.','Выставить 1-й цилиндр в ВМТ.','Нанести метки на цепь.','Снять натяжитель.','Перед установкой утопить шток и зафиксировать.','Затянуть гайки моментом 29 Н·м.']},
  {title:'Крышка цепи ГРМ — снятие и установка',tag:'ГРМ',summary:'Удалить старый герметик, проверить метки звездочек, нанести новый герметик и затянуть крепеж по схеме.',warn:'Перед снятием слить охлаждающую жидкость.',steps:['Снять ремень навесного оборудования и опоры.','Выставить метку шкива коленвала напротив 0.','Проверить метки распредвалов.','Снять крышку ГРМ.','Очистить поверхности.','Нанести герметик и поставить крышку.','Затянуть M6 — 12 Н·м, M8 — 18 Н·м.']},
@@ -117,9 +159,12 @@ function renderDiagram(){const d=diagrams[currentDiagram];$('#schemeTitle').text
 function renderDiagramSelect(){$('#diagramSelect').innerHTML=diagrams.map((d,i)=>`<button class="${i===currentDiagram?'active':''}" onclick="currentDiagram=${i};selected=null;zoom=1;renderDiagram();renderInfo(null)">${d.title}</button>`).join('')}
 function selectPart(num){selected=num;renderDiagram();renderInfo(findPart(num));const row=$(`tr[data-code="${CSS.escape(findPart(num)?.code||'')}"]`);$$('tr').forEach(r=>r.classList.remove('row-select'));if(row)row.classList.add('row-select')}
 function renderInfo(p){if(!p){$('#partInfo').innerHTML=`<div class="num pulse">?</div><h3>Выбери деталь</h3><p class="muted">Кликни по зелёной зоне на схеме. Здесь появятся название, артикул и подсказки.</p>`;$('#linkedData').textContent='Пока ничего не выбрано.';return}const torque=torques.find(t=>JSON.stringify(t).toLowerCase().includes(p.name.split(' ')[0].toLowerCase())||JSON.stringify(t).toLowerCase().includes(p.role.split(' ')[0].toLowerCase()));$('#partInfo').innerHTML=`<div class="num">${p.n}</div><h3>${p.name}</h3><div class="part-code">${p.code}</div><p class="muted">${p.role}</p><p><b>Система:</b> ${p.sys}</p><p><b>Кол-во:</b> ${p.qty}</p>`;$('#linkedData').innerHTML=torque?`Подходящий момент: <b>${torque[1]}</b><br><span class="muted">${torque[0]}</span>`:'Для этой детали момент не указан в MVP. Нужно сверить по оригинальной странице.'}
+function renderMaintenance(){const m=Number($('#mileage')?.value||0);let due=0,soon=0;$('#maintenanceCards').innerHTML=maintenance.map((item,i)=>{const rem=item.interval-(m%item.interval);const overdue=rem===item.interval&&m>0;const isSoon=!overdue&&rem<=3000;due+=overdue?1:0;soon+=isSoon?1:0;const cls=overdue?'due':isSoon?'soon':'ok';const status=overdue?'Пора выполнить':isSoon?`Скоро: через ${rem.toLocaleString('ru-RU')} км`:`Осталось ${rem.toLocaleString('ru-RU')} км`;return `<article class="card ${cls}"><span class="tag">каждые ${item.interval.toLocaleString('ru-RU')} км</span><h3>${item.name}</h3><p><b>${status}</b></p>${item.critical?'<div class="danger">Критичная операция: не затягивать при симптомах.</div>':''}${item.checks.map(c=>`<label class="checkline"><input type="checkbox"> <span>${c}</span></label>`).join('')}</article>`}).join('');$('#maintenanceSummary').innerHTML=`Просрочено: <b>${due}</b>. Ближайшие: <b>${soon}</b>. Расчёт для ${m.toLocaleString('ru-RU')} км.`}
+function renderSymptoms(){const box=$('#symptomGrid');if(!box)return;box.innerHTML=symptoms.map((s,i)=>`<button class="symptom-btn" onclick="selectSymptom(${i})">${s.name}</button>`).join('')}
+function selectSymptom(i){const s=symptoms[i];$$('.symptom-btn').forEach((b,n)=>b.classList.toggle('active',n===i));$('#symptomResult').innerHTML=`<h3>${s.name}</h3><p><b>Вероятные причины:</b> ${s.causes.join(', ')}.</p><div class="steps">${s.checks.map(c=>`<div class="step">${c}</div>`).join('')}</div><button class="mini-btn" onclick="showView('${s.view}')">Открыть связанный раздел</button>`}
 function renderTables(){const q=query.toLowerCase();const f=o=>!q||JSON.stringify(o).toLowerCase().replaceAll('ё','е').includes(q.replaceAll('ё','е'));$('#partsBody').innerHTML=parts.filter(f).map(p=>`<tr data-code="${p.code}" onclick="showView('schemes');currentDiagram=${p.sys.includes('COVER')?1:0};selected='${p.n}';renderDiagram();renderInfo(findPart('${p.n}'))"><td>${p.n}</td><td><b>${p.code}</b></td><td>${p.name}<br><span class="muted">${p.role}</span></td><td>${p.qty}</td><td>${p.sys}</td></tr>`).join('');$('#torqueCards').innerHTML=torques.filter(f).map(t=>`<article class="card"><span class="tag">${t[2]}</span><h3>${t[0]}</h3><p style="font-size:30px;color:var(--green);font-weight:1000;margin:8px 0">${t[1]}</p></article>`).join('');$('#procedureCards').innerHTML=procedures.filter(f).map(p=>`<article class="card"><span class="tag">${p.tag}</span><h3>${p.title}</h3><p class="muted">${p.summary}</p><div class="danger">⚠ ${p.warn}</div><details><summary><b>Показать шаги</b></summary><ol>${p.steps.map(s=>`<li>${s}</li>`).join('')}</ol></details></article>`).join('')}
 $('#search').addEventListener('input',e=>{query=e.target.value;renderTables()});$('#zoomIn').onclick=()=>{zoom=Math.min(1.65,zoom+.12);renderDiagram()};$('#zoomOut').onclick=()=>{zoom=Math.max(.72,zoom-.12);renderDiagram()};$('#zoomFit').onclick=()=>{zoom=1;renderDiagram()};
-renderDiagramSelect();renderDiagram();renderInfo(null);renderTables();
+renderDiagramSelect();renderDiagram();renderInfo(null);renderTables();renderMaintenance();renderSymptoms();$('#calcMaintenance').onclick=renderMaintenance;
 </script>
 </body>
 </html>
